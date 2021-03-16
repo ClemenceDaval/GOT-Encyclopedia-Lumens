@@ -8,7 +8,7 @@
    <ul class="characters-list">
         <?php
         foreach($characters as $character):
-        //dump($character);
+        dump($character->title);
         ?>
             <li class="character-card">
             <a href="#character/1">
