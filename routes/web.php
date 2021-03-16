@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -12,5 +14,11 @@
 |
 */
 
-
+$router->get(
+    '/',
+    [
+        'uses' => 'MainController@home', // nomdDuController@@NomDeLaMethode
+        'as'   => 'main-home' // nom de la route
+    ]
+);
 
