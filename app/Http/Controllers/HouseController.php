@@ -17,17 +17,13 @@ class HouseController extends Controller
 
     }
 
+    public function item($id)
+    {
+        $houseId= intval($id);
+        $house = House::find($houseId);
 
+        return View::make('house/item', ['house' => $house]);
 
-    // public function item($id)
-    // {
-    //     $characterId= intval($id);
-    //     $character = Character::find($characterId);
-    //     //$titles = Title::all();
-
-    //     //return $this->sendJsonResponse($character, 200);
-    //     return View::make('character/item', ['character' => $character]);
-
-    // }
+    }
 
 }

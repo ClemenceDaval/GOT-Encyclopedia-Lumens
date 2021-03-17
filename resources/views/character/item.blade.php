@@ -1,7 +1,7 @@
 @include('layout.header')
 
 <?php
-dump($character->house);
+//dump($character->house);
 //dump($titles);
  ?>
 <section class="character-page">
