@@ -1,5 +1,0 @@
-<?php
-
-dump($title);
-
-?>

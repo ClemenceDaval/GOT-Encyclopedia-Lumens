@@ -8,12 +8,13 @@
    <ul class="characters-list">
         <?php
         foreach($characters as $character):
-        dump($character->title);
+        $houses= $character->house;
+        //dump($houses[0]->colour);
         ?>
             <li class="character-card">
             <a href="#character/1">
 
-                <div class="avatar" style="<?= 'background: #' . $house->colour ?>">
+                <div class="avatar" style="<?= 'background : #' . $houses[0]->colour ?>">
                     <img src=" <?= './assets/img/' . $character->image ?>" alt="<?= $character->first_name ?>">
                 </div>
                 <div class="name">

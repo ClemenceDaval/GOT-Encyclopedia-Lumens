@@ -13,21 +13,20 @@
     //dump($character->title);
     ?>
         <li class="character-card">
-        <a href="#character/1">
+            <a href="#character/1">
 
-            <div class="avatar" style="<?= 'background: #' . $house->colour ?>">
-                <img src=" <?= '../assets/img/' . $character->image ?>" alt="<?= $character->first_name ?>">
-            </div>
-            <div class="name">
-                <?= $character->first_name . ' ' . $character->last_name ?>
-            </div>
-        </a>
-    </li>
+                <div class="avatar" style="<?= 'background: #' . $character->house[0]->colour ?>">
+                    <img src=" <?= '../assets/img/' . $character->image ?>" alt="<?= $character->first_name ?>">
+                </div>
+                <div class="name">
+                    <?= $character->first_name . ' ' . $character->last_name ?>
+                </div>
+            </a>
+        </li>
 
-        <?php
-        endforeach;
-        ?>
-
+    <?php
+    endforeach;
+    ?>
 
     </ul>
 
