@@ -14,5 +14,8 @@ class House extends Model {
 
     protected $table = 'house' ;
 
+    public function character(){
+        return $this->belongsToMany(Character::class, 'house_has_characters', 'house', 'character');
+    }
 
 }

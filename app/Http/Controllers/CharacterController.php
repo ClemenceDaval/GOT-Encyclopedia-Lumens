@@ -28,4 +28,13 @@ class CharacterController extends Controller
 
     }
 
+    // public function listByHouse($id)
+    // {
+    //     $houseId = intval($id);
+    //     $character = Character
+
+    // }
+
+
+
 }

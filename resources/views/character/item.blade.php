@@ -1,7 +1,7 @@
 @include('layout.header')
 
 <?php
-//dump($character->mother->first_name);
+dump($character->house);
 //dump($titles);
  ?>
 <section class="character-page">
@@ -22,16 +22,16 @@
             <h3>Maisons</h3>
             <div class="houses">
                 <ul>
-                    <li class="house-logo" style="background: #e3e3e3;">
-                        <a href="#/house/1">
-                            <img src="./Game of Thrones_files/stark.png" alt="Stark">
-                        </a>
-                    </li>
-                    <li class="house-logo" style="background: #2b3aab;">
-                        <a href="#/house/3">
-                            <img src="./Game of Thrones_files/tully.png" alt="Tully">
-                        </a>
-                    </li>
+                    <?php
+                    $houses = $character->house;
+                    foreach($houses as $house):
+                    ?>
+                        <li class="house-logo" style="<?= 'background: #' . $house->colour ?>">
+                            <a href="<?= '../houses/' . $house->id ?>">
+                                <img src="<?= '../assets/img/houses/' . $house->image ?>" alt="<?= $house->name ?>">
+                            </a>
+                        </li>
+                    <?php endforeach ?>
                 </ul>
             </div>
             <ul class="meta">

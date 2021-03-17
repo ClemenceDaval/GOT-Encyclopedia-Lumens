@@ -26,6 +26,11 @@ class Character extends Model {
         return $this->belongsTo('App\Models\Character', 'father_id');
     }
 
+    public function house(){
+        return $this->belongsToMany(House::class, 'house_has_characters', 'character', 'house');
+    }
+
+
 
 
 

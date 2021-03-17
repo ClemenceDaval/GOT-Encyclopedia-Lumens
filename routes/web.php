@@ -54,4 +54,12 @@ $router->get(
     ]
 );
 
+$router->get(
+    '/houses/{id}',
+    [
+        'uses' => 'HouseController@item', // nomdDuController@@NomDeLaMethode
+        'as'   => 'house-item' // nom de la route
+    ]
+);
+
 

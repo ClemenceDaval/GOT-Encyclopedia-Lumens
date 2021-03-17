@@ -17,6 +17,8 @@ class HouseController extends Controller
 
     }
 
+
+
     // public function item($id)
     // {
     //     $characterId= intval($id);
