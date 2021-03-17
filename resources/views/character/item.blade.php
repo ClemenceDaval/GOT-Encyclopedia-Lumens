@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="col-4">
-        <div class="avatar" style="background: #e3e3e3;">
+        <div class="avatar" style="<?= 'background: #' . $character->house[0]->colour ?>">
             <img src="<?= '../assets/img/' . $character->image ?>" alt="<?= $character->first_name ?>">
         </div>
         <div class="infos">

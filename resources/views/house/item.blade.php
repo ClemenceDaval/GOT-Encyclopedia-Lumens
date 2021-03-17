@@ -13,7 +13,7 @@
     //dump($character->title);
     ?>
         <li class="character-card">
-            <a href="#character/1">
+            <a href="<?= '../characters/' . $character->id ?>">
 
                 <div class="avatar" style="<?= 'background: #' . $character->house[0]->colour ?>">
                     <img src=" <?= '../assets/img/' . $character->image ?>" alt="<?= $character->first_name ?>">
