@@ -4,7 +4,6 @@ namespace App\Http\Controllers;
 
 use DB;
 use App\Models\Character;
-use App\Models\Title;
 use Illuminate\Support\Facades\View;
 
 
